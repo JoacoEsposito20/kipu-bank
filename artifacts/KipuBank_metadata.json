@@ -6,16 +6,65 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_montoBankCap",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "KipuBank_DepositoInvalido",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "KipuBank_MontoDeDepositoExcedido",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "KipuBank_MontoTransaccionExcedido",
+				"type": "error"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
 						"indexed": false,
-						"internalType": "string",
-						"name": "mensaje",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "KipuBank_montoDepositado",
+				"name": "KipuBank_DepositoRealizado",
 				"type": "event"
 			},
 			{
@@ -23,52 +72,28 @@
 				"inputs": [
 					{
 						"indexed": false,
-						"internalType": "string",
-						"name": "mensaje",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "KipuBank_montoRetirado",
+				"name": "KipuBank_RetiroRealizado",
 				"type": "event"
+			},
+			{
+				"stateMutability": "nonpayable",
+				"type": "fallback"
 			},
 			{
 				"inputs": [],
-				"name": "consultarSaldo",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "monto_",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_monto",
-						"type": "uint256"
-					}
-				],
 				"name": "depositar",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_monto",
-						"type": "uint256"
-					}
-				],
-				"name": "retirar",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -99,11 +124,11 @@
 	},
 	"sources": {
 		"contracts/kipu-bank.sol": {
-			"keccak256": "0x40a86681d1afa9e5f0d44b0e464af9deacab7d7e5db605ab7a87ead8a1b51c15",
+			"keccak256": "0x0190f70a23401a654c8b5903bc8ccebaacd05512bdbb82cf5c6f913547c2dc89",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://085f3d57153bf098d1734a25fff4cbee7ebbfe135bb7420eb4cf1676d56b0180",
-				"dweb:/ipfs/QmYgoSVsVbUZz2AS4dfVQdCiNXiauNCxTK8xANQTfxVs4K"
+				"bzz-raw://a58e528f1625edc66aa604ead982293ebea84e73b55a86f9cf70c0878068ae69",
+				"dweb:/ipfs/QmQt148PaSoGge8yVbiPHgrbB2cUFcJsaDx3h3xXXCHnLj"
 			]
 		}
 	},
