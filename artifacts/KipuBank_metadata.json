@@ -4,7 +4,73 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "mensaje",
+						"type": "string"
+					}
+				],
+				"name": "KipuBank_montoDepositado",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "mensaje",
+						"type": "string"
+					}
+				],
+				"name": "KipuBank_montoRetirado",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "consultarSaldo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "monto_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_monto",
+						"type": "uint256"
+					}
+				],
+				"name": "depositar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_monto",
+						"type": "uint256"
+					}
+				],
+				"name": "retirar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +84,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"kipu-bank.sol": "KipuBank"
+			"contracts/kipu-bank.sol": "KipuBank"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -32,12 +98,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"kipu-bank.sol": {
-			"keccak256": "0xd2e8770725c4e88fb50ef9667068e44ec08ef591d2798c923fcbcfde3dfc28c9",
+		"contracts/kipu-bank.sol": {
+			"keccak256": "0x40a86681d1afa9e5f0d44b0e464af9deacab7d7e5db605ab7a87ead8a1b51c15",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fb37cdd461195efc51dca0bae57819f501c450edaf8aa4596be50050da3b28c7",
-				"dweb:/ipfs/QmYpfcVNDu5ZQXfTZp8NyygruSfDvi7W8HfBXsFJegi9V7"
+				"bzz-raw://085f3d57153bf098d1734a25fff4cbee7ebbfe135bb7420eb4cf1676d56b0180",
+				"dweb:/ipfs/QmYgoSVsVbUZz2AS4dfVQdCiNXiauNCxTK8xANQTfxVs4K"
 			]
 		}
 	},
